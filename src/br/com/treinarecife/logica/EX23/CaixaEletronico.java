@@ -1,6 +1,15 @@
 package br.com.treinarecife.logica.EX23;
 
 /**
+ * Aula 06 - Composição ou Agregação https://www.youtube.com/watch?v=ldk-rKOF88E
+ * "A arte de programar consiste em organizar e dominar a complexidade.
+ * " — Edsger W. Dijkstra.
+ * - Sempre que der prefira composição em vez de herança (Eu devo usar herança
+ * aqui?)
+ * - Terminou uma aula no primeiro bloco reforçar algo do segundo no caderno.
+ * - Aluno usa professor
+ * 
+ * 
  * EX23 – Caixa Eletrônico
  * Elabore um programa que receba um valor inteiro. A seguir, calcule o
  * menor número de notas possíveis (cédulas) no qual o valor pode ser
@@ -31,33 +40,62 @@ package br.com.treinarecife.logica.EX23;
  */
 public class CaixaEletronico {
 
-    public void decomposicaoDeSedulas(int quantidade) {
-
-        if (quantidade > 100) {
-
-            String numero = String.valueOf(quantidade);
-            char ultimaLetra = numero.charAt(numero.length() - 1);
-            char penultimaLetra = numero.charAt(numero.length() - 2);
-            char antiPenultimaLetra = numero.charAt(numero.length() - 3);
-
-            for (int i = 1; i <= quantidade; ++i) {
-
-                System.out.println(i);
-
-            }
-
-            
-        } else {
-
-            System.out.println("Só aceitamos valores maiores que 150");
-        }
-
-    }
-
+    /*
+     * public void decomposicaoDeSedulas(int quantidade) {
+     * 
+     * if (quantidade > 100) {
+     * 
+     * String numero = String.valueOf(quantidade);
+     * char ultimaLetra = numero.charAt(numero.length() - 1);
+     * char penultimaLetra = numero.charAt(numero.length() - 2);
+     * char antiPenultimaLetra = numero.charAt(numero.length() - 3);
+     * 
+     * for (int i = 1; i <= quantidade; ++i) {
+     * 
+     * System.out.println(i);
+     * 
+     * }
+     * 
+     * 
+     * } else {
+     * 
+     * System.out.println("Só aceitamos valores maiores que 150");
+     * }
+     * 
+     * }
+     */
     public static void main(String[] args) {
 
-        CaixaEletronico c = new CaixaEletronico();
-        c.decomposicaoDeSedulas(576);
+        int numero = 576;
+
+        int centenaUm = numero / 100;
+        System.out.println(centenaUm);
+
+        int dezena = numero % 100;
+        if (dezena > 50) {
+
+            int cinquenta = 50;
+            System.out.println(cinquenta);
+
+            int resto = dezena - cinquenta;
+
+            if (resto > 20) {
+                int vinte = 20;
+                System.out.println(vinte);
+
+                int unidade = resto - vinte;
+                System.out.println(unidade);
+
+                if (unidade > 5) {
+
+                    int cinco = 5;
+                    System.out.println(cinco);
+
+                    int subtrairunidade = unidade - cinco;
+                    System.out.println(subtrairunidade);
+                }
+            }
+        }
 
         /*
          * Scanner sc = new Scanner(System.in);
