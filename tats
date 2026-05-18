@@ -1,0 +1,82 @@
+[33mcommit b368f7e74f30434fa244a5df11569f23a6e79041[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Augusto1547 <negocios.augusto@gmail.com>
+Date:   Mon May 4 08:26:29 2026 -0300
+
+    Registrar a criação da primeira linha do meu arquivo README.md e
+    colocar uma primeira versão de teste do programa que decompõe notas
+    de real.
+
+ .gitignore                                         |   1 [32m+[m
+ .../treinarecife/logica/EX23/CaixaEletronico.class | Bin [31m0[m -> [32m465[m bytes
+ .../treinarecife/logica/EX23/CaixaEletronico.java  |  72 [32m++++++++++++++++[m[31m-----[m
+ 3 files changed, 56 insertions(+), 17 deletions(-)
+
+[33mcommit 8b6fd440c83b6f6280aee76666fd03fb2ee55bae[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Augusto1547 <negocios.augusto@gmail.com>
+Date:   Mon Apr 27 16:20:00 2026 -0300
+
+    Adicionado src ao repositório
+
+ .gitignore                                         |   0
+ README.md                                          |  11 [32m+++[m
+ .../com/treinarecife/logica/EX10/Funcionario.java  |  60 [32m++++++++++++[m
+ src/br/com/treinarecife/logica/EX11/AppRateio.java |  37 [32m++++++++[m
+ src/br/com/treinarecife/logica/EX11/Rateio.java    |  46 [32m+++++++++[m
+ .../treinarecife/logica/EX11/RateioServico.java    |  14 [32m+++[m
+ .../logica/EX12/ApplicationDesconto.java           |  36 [32m+++++++[m
+ src/br/com/treinarecife/logica/EX12/Desconto.java  |   6 [32m++[m
+ .../treinarecife/logica/EX12/PromocaoDaLoja.java   |  42 [32m+++++++++[m
+ src/br/com/treinarecife/logica/EX13/Juros.java     |  69 [32m++++++++++++++[m
+ .../treinarecife/logica/EX14/CalculoDoImposto.java |  98 [32m+++++++++++++++++++[m
+ .../treinarecife/logica/EX15/AppShowAoVivo.java    |  34 [32m+++++++[m
+ .../com/treinarecife/logica/EX15/ShowAoVivo.java   |  64 [32m+++++++++++++[m
+ .../com/treinarecife/logica/EX16/PesqueEPague.java |  48 [32m++++++++++[m
+ .../treinarecife/logica/EX17/DiaDoTrabalho.java    |  64 [32m+++++++++++++[m
+ src/br/com/treinarecife/logica/EX18/Estoque.java   |  33 [32m+++++++[m
+ .../logica/EX18/ReposicaoDeEstoque.java            |  25 [32m+++++[m
+ .../logica/EX19/AppDescontoEmVendas.java           |  27 [32m++++++[m
+ .../treinarecife/logica/EX19/DescontoEmVendas.java |  23 [32m+++++[m
+ .../com/treinarecife/logica/EX20/MaiorDeTres.java  |  80 [32m++++++++++++++++[m
+ .../treinarecife/logica/EX21/OrdemCrescente.java   |  74 [32m+++++++++++++++[m
+ .../logica/EX22/AppCalculaImposto.java             |  60 [32m++++++++++++[m
+ .../com/treinarecife/logica/EX22/ImpostoCasal.java | 104 [32m+++++++++++++++++++++[m
+ .../treinarecife/logica/EX23/CaixaEletronico.java  |  85 [32m+++++++++++++++++[m
+ .../treinarecife/logica/EX7/AplicacaoSalario.java  |  21 [32m+++++[m
+ .../com/treinarecife/logica/EX7/Funcionario.java   |  68 [32m++++++++++++++[m
+ .../com/treinarecife/logica/EX8/AppConcurso.java   |  17 [32m++++[m
+ src/br/com/treinarecife/logica/EX8/Concurso.java   |  49 [32m++++++++++[m
+ .../treinarecife/logica/EX9/AppCalculoEnergia.java |  27 [32m++++++[m
+ .../treinarecife/logica/EX9/CalculoEnergia.java    |  16 [32m++++[m
+ .../treinarecife/logica/EX9/ContaDeEnergia.java    |  59 [32m++++++++++++[m
+ src/br/com/treinarecife/poo/Funcionario.java       |   5 [32m+[m
+ .../com/treinarecife/logica/EX10/Funcionario.java  |  60 [32m++++++++++++[m
+ .../br/com/treinarecife/logica/EX11/AppRateio.java |  37 [32m++++++++[m
+ .../br/com/treinarecife/logica/EX11/Rateio.java    |  46 [32m+++++++++[m
+ .../treinarecife/logica/EX11/RateioServico.java    |  14 [32m+++[m
+ .../logica/EX12/ApplicationDesconto.java           |  36 [32m+++++++[m
+ .../br/com/treinarecife/logica/EX12/Desconto.java  |   6 [32m++[m
+ .../treinarecife/logica/EX12/PromocaoDaLoja.java   |  42 [32m+++++++++[m
+ src/src/br/com/treinarecife/logica/EX13/Juros.java |  69 [32m++++++++++++++[m
+ .../treinarecife/logica/EX14/CalculoDoImposto.java |  98 [32m+++++++++++++++++++[m
+ .../treinarecife/logica/EX15/AppShowAoVivo.java    |  34 [32m+++++++[m
+ .../com/treinarecife/logica/EX15/ShowAoVivo.java   |  64 [32m+++++++++++++[m
+ .../com/treinarecife/logica/EX16/PesqueEPague.java |  48 [32m++++++++++[m
+ .../treinarecife/logica/EX17/DiaDoTrabalho.java    |  64 [32m+++++++++++++[m
+ .../br/com/treinarecife/logica/EX18/Estoque.java   |  33 [32m+++++++[m
+ .../logica/EX18/ReposicaoDeEstoque.java            |  25 [32m+++++[m
+ .../logica/EX19/AppDescontoEmVendas.java           |  27 [32m++++++[m
+ .../treinarecife/logica/EX19/DescontoEmVendas.java |  23 [32m+++++[m
+ .../com/treinarecife/logica/EX20/MaiorDeTres.java  |  80 [32m++++++++++++++++[m
+ .../treinarecife/logica/EX21/OrdemCrescente.java   |  74 [32m+++++++++++++++[m
+ .../logica/EX22/AppCalculaImposto.java             |  60 [32m++++++++++++[m
+ .../com/treinarecife/logica/EX22/ImpostoCasal.java | 104 [32m+++++++++++++++++++++[m
+ .../treinarecife/logica/EX23/CaixaEletronico.java  |  85 [32m+++++++++++++++++[m
+ .../treinarecife/logica/EX7/AplicacaoSalario.java  |  21 [32m+++++[m
+ .../com/treinarecife/logica/EX7/Funcionario.java   |  68 [32m++++++++++++++[m
+ .../com/treinarecife/logica/EX8/AppConcurso.java   |  17 [32m++++[m
+ .../br/com/treinarecife/logica/EX8/Concurso.java   |  49 [32m++++++++++[m
+ .../treinarecife/logica/EX9/AppCalculoEnergia.java |  27 [32m++++++[m
+ .../treinarecife/logica/EX9/CalculoEnergia.java    |  16 [32m++++[m
+ .../treinarecife/logica/EX9/ContaDeEnergia.java    |  59 [32m++++++++++++[m
+ src/src/br/com/treinarecife/poo/Funcionario.java   |   5 [32m+[m
+ 62 files changed, 2793 insertions(+)

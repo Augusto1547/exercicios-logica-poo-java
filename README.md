@@ -8,4 +8,4 @@
  
  # CONCEITOS OU CÓDIGOS ESPECÍFICOS JAVA
 
- - Nome completamente qualificado da classe java
+ -Se eu aplicar esse commit, ele vai...( a mensagem de comite tem que continuar a frase)
