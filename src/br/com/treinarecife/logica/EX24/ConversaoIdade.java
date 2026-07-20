@@ -3,7 +3,10 @@ package br.com.treinarecife.logica.EX24;
 /**
  * Aula 06 - Composição ou Agregação
  * https://www.youtube.com/watch?v=ezE5Wghl0nY
- * Lógica no dicionário e condição, bifurcação
+ * Notação Big O
+ * Nunca esqueça de usar a metacognição
+ * Se qualquer um dos valores de i if(i =...)
+ * (poo,solid,design patterns (para se tornar mestre em poo))
  * A lógica de programação é a arte de isolar o como as coisas são feitas.
  * "Um dado entra, sofre uma transformação(refinamento) e gera um resultado"
  * A herança não é uma democracia, é uma monarquia.
@@ -16,7 +19,6 @@ package br.com.treinarecife.logica.EX24;
  * protected diz: "Isso é um segredo de família".
  * "A arte de programar consiste em organizar e dominar a complexidade.
  * " — Edsger W. Dijkstra.
- * - Programar se resume na interação entre caracteristicas e comportamentos
  * - Sempre que der prefira composição em vez de herança (Eu devo usar herança
  * aqui?)
  * - Aluno usa professor
@@ -28,7 +30,6 @@ package br.com.treinarecife.logica.EX24;
  * -O que eu quero gerar daqui?
  * Algo pode atrapahar ou desviar o percurso?
  * Qual é a condição para que isso aconteça?
- * -Modo disperso e concentrado
  * --------------------------------------------------------------------
  * EX24– Transformar em Ano, Mês, Dia
  * Desenvolva um programa que receba um valor inteiro relacionado à idade de uma
@@ -60,22 +61,30 @@ package br.com.treinarecife.logica.EX24;
  */
 public class ConversaoIdade {
 
-  public static void converterIdades(int idade) {
+  public static void transformarIdade(int idade) {
 
-    if (idade > 324) {
+    int ano = 0;
+    int mes = 0;
+    int dia = 0;
 
-      int ano = idade % 3;
-      System.out.println(ano);
+    if (idade < 365) {
 
-    } else {
+      System.out.println(ano + " ano(s)");
 
-      throw new IllegalArgumentException("Valor inválido: só ceitamos valores acima de 324");
+    }
+    int inteiroFornecido = idade;
+    for (int i = 1; i <= inteiroFornecido; i++) {
+
+      if (i % 365 == 0) {
+
+        int anos = i / 365;
+        System.out.println(i + " dias = " + anos + " ano(s)");
+      }
     }
   }
-
   public static void main(String[] args) {
 
-    ConversaoIdade.converterIdades(400);
+    ConversaoIdade.transformarIdade(767);
 
   }
 
